@@ -1,0 +1,1000 @@
+ 1001  node invoke.ts 
+ 1002  node enrollAdmin.ts 
+ 1003  npm i fabric-ca-client
+ 1004  node enrollAdmin.ts 
+ 1005  npm i fabric-ca-client --save
+ 1006  node enrollAdmin.ts 
+ 1007  cd ..
+ 1008  npm i fabric-ca-client --save\
+ 1009  npm i fabric-ca-client --save
+ 1010  cd src/
+ 1011  ls
+ 1012  node invoke.ts 
+ 1013  node enrollAdmin.ts 
+ 1014  ls
+ 1015  node query.ts 
+ 1016  cd ..
+ 1017  ls
+ 1018  cd src/
+ 1019  tsc invoke.ts 
+ 1020  apt install node-typescript
+ 1021  sudo apt install node-typescript
+ 1022  tsc invoke.ts 
+ 1023  cd
+ 1024  ls
+ 1025  cd hyperledgerPoc/
+ 1026  ls
+ 1027  cd f
+ 1028  CD ..
+ 1029  cd ..
+ 1030  cd Des`
+ 1031  cd Desktop/
+ 1032  ls
+ 1033  cd fabric-samples/
+ 1034  ls
+ 1035  cd MedicalInsurance/
+ 1036  ls
+ 1037  ./sf.sh 
+ 1038  ./sf.sh  down
+ 1039  sudo ./sf.sh 
+ 1040  docker rm -f 2f7b3ec936cff48bacbe300a50b9975875c72f0b9806a15d4cc5cf82e323be30
+ 1041  sudo docker rm -f 2f7b3ec936cff48bacbe300a50b9975875c72f0b9806a15d4cc5cf82e323be30
+ 1042  sudo ./sf.sh 
+ 1043  exit
+ 1044  cd hyperledgerPoc/
+ 1045  ls
+ 1046  cd medi-insurance/
+ 1047  ls
+ 1048  cd frontend/
+ 1049  ls
+ 1050  ng s
+ 1051  cd ..
+ 1052  ls
+ 1053  cd Downloads/
+ 1054  ls
+ 1055  cd 28/
+ 1056  ls
+ 1057  cd frontend/
+ 1058  ls
+ 1059  ng s
+ 1060  npm i
+ 1061  ls
+ 1062  ng s
+ 1063  exit
+ 1064  ls
+ 1065  cd Des
+ 1066  cdls
+ 1067  ls
+ 1068  cd Desktop/
+ 1069  ls
+ 1070  cd fabric-samples/
+ 1071  ls
+ 1072  cd MedicalInsurance/
+ 1073  ls
+ 1074  sudo ./sf.sh 
+ 1075  ls
+ 1076  cd nodejs/
+ 1077  ls
+ 1078  cd hfc-key-store/
+ 1079  ls
+ 1080  cd ..
+ 1081  ls
+ 1082  node enrollAdmin.js 
+ 1083  node registerUser.js 
+ 1084  sudo ./sf.sh 
+ 1085  cd ..
+ 1086  sudo ./sf.sh 
+ 1087  cd nodejs/
+ 1088  ls
+ 1089  node enrollAdmin.js 
+ 1090  ls
+ 1091  lls
+ 1092  ls
+ 1093  cd ..
+ 1094  cd hyperledgerPoc/
+ 1095  ls
+ 1096  git clone https://github.com/IBM/build-blockchain-insurance-app.git
+ 1097  ls
+ 1098  cd build-blockchain-insurance-app/
+ 1099  ls
+ 1100  ./build_ubuntu.sh 
+ 1101  sudo ./build_ubuntu.sh 
+ 1102  ls
+ 1103  sudo ./build_ubuntu.sh 
+ 1104  docker login
+ 1105  docker
+ 1106  docker login
+ 1107  sudo ./build_ubuntu.sh 
+ 1108  ls
+ 1109  cd Desktop/
+ 1110  ls
+ 1111  cd fabric-samples/
+ 1112  kls
+ 1113  ks
+ 1114  ls
+ 1115  cd MedicalInsurance/
+ 1116  ls
+ 1117  ./sf.sh 
+ 1118  sudo ./sf.sh 
+ 1119  ls
+ 1120  cd nodejs/
+ 1121  ls
+ 1122  node enrollAdmin.js 
+ 1123  node registerUser.js 
+ 1124  sudo node registerUser.js 
+ 1125  ls
+ 1126  node enrollAdmin.js 
+ 1127  node registerUser.js 
+ 1128  ls
+ 1129  cd ..
+ 1130  ls
+ 1131  cd fabric-samples/
+ 1132  ls
+ 1133  cd MedicalInsurance/
+ 1134  s
+ 1135  ls
+ 1136  ./sf.sh 
+ 1137  sudo ./sf.sh 
+ 1138  cd nodejs/
+ 1139  ls
+ 1140  npm install
+ 1141  node enrollAdmin.js 
+ 1142  npm i fabric-client
+ 1143  node enrollAdmin.js 
+ 1144  npm i fabric-ca-cline
+ 1145  npm i fabric-ca-client
+ 1146  node enrollAdmin.js 
+ 1147  node registerUser.js 
+ 1148  node enrollAdmin.js 
+ 1149  node registerUser.js 
+ 1150  node invoke.js 
+ 1151  npm i express
+ 1152  node invoke.js 
+ 1153  npm i cors
+ 1154  node invoke.js 
+ 1155  npm i unix-time]
+ 1156  npm i unix-time
+ 1157  npm i unix-time]
+ 1158  node invoke.js 
+ 1159  exit
+ 1160  ls
+ 1161  cd
+ 1162  cd hyperledgerPoc/
+ 1163  ls
+ 1164  cd medi-insurance/
+ 1165  ls
+ 1166  cd frontend/
+ 1167  ls
+ 1168  cd
+ 1169  cd Desktop/fabric-samples
+ 1170  ls
+ 1171  cd MedicalInsurance/
+ 1172  ls
+ 1173  cd frontend/
+ 1174  ls
+ 1175  ng s
+ 1176  ls
+ 1177  ng s
+ 1178  ls
+ 1179  npm i
+ 1180  ng s
+ 1181  exit
+ 1182  cd 
+ 1183  ls
+ 1184  cd hyperledgerPoc/
+ 1185  ls
+ 1186  cd medi-insurance/
+ 1187  ls
+ 1188  git status
+ 1189  git add *
+ 1190  git status
+ 1191  git commit clear
+ 1192  clear
+ 1193  git status
+ 1194  git add *
+ 1195  git status
+ 1196  git commit -m "implementation with angular"
+ 1197  git status
+ 1198  git push
+ 1199  exit
+ 1200  npm i
+ 1201  ng s
+ 1202  ng serve
+ 1203  cd
+ 1204  cd hyperledgerPoc/
+ 1205  ks
+ 1206  ls
+ 1207  cd medi-insurance/
+ 1208  cd frontend/
+ 1209  ls
+ 1210  npm i 
+ 1211  ng s
+ 1212  exit
+ 1213  electron .
+ 1214  exit
+ 1215  ls
+ 1216  ng s
+ 1217  exit
+ 1218  npm i electron
+ 1219  exit
+ 1220  sudo npm install -g electron --unsafe-perm=true --allow-root
+ 1221  electron .
+ 1222  exit
+ 1223  ls
+ 1224  cd Downloads/
+ 1225  ls
+ 1226  cd wandxdesktopdapp/
+ 1227  ls
+ 1228  ng s
+ 1229  electron .
+ 1230  exit
+ 1231  restart
+ 1232  shutdown -r now
+ 1233  exit
+ 1234  ls
+ 1235  cd
+ 1236  cd Desktop/
+ 1237  ls
+ 1238  cd fabric-samples/
+ 1239  ls
+ 1240  cd MedicalInsurance/
+ 1241  ls
+ 1242  sudo ./sf.sh 
+ 1243  ls
+ 1244  cd nodejs/
+ 1245  ls
+ 1246  node enrollAdmin.js 
+ 1247  node registerUser.js 
+ 1248  ls
+ 1249  node invokeMI.js 
+ 1250  cd ..
+ 1251  cd bas
+ 1252  cd basic-network/
+ 1253  ls
+ 1254  ./stop.sh 
+ 1255  sudo ./stop.sh 
+ 1256  exit
+ 1257  cd
+ 1258  cd hyperledgerPoc/
+ 1259  ls
+ 1260  cd medi-insurance/
+ 1261  ls
+ 1262  cd frontend/
+ 1263  ls
+ 1264  ng s
+ 1265  exit
+ 1266  ls
+ 1267  cd
+ 1268  ls
+ 1269  cd hyperledgerPoc/
+ 1270  ls
+ 1271  cd medi-insurance/
+ 1272  ls
+ 1273  cd f
+ 1274  cd frontend/
+ 1275  ls
+ 1276  ng s
+ 1277  exit
+ 1278  electron .
+ 1279  exit
+ 1280  cd Downloads/
+ 1281  ls
+ 1282  cd wandxdesktopdapp/
+ 1283  LS
+ 1284  ls
+ 1285  ng s
+ 1286  ng sw
+ 1287  ng s
+ 1288  cd
+ 1289  ls
+ 1290  cd Desktop/
+ 1291  ls
+ 1292  cd fabric-samples/
+ 1293  ls
+ 1294  cd MedicalInsurance/
+ 1295  ls
+ 1296  cd frontend/
+ 1297  cd ..
+ 1298  cd .
+ 1299  cd
+ 1300  cd hyperledgerPoc/
+ 1301  ls
+ 1302  cd m
+ 1303  cd medi-insurance/
+ 1304  ls
+ 1305  cd frontend/
+ 1306  ls
+ 1307  ng s
+ 1308  sudo ng s --watch 
+ 1309  exit
+ 1310  ls
+ 1311  cd
+ 1312  cd Desktop/
+ 1313  ls
+ 1314  cd fabric-samples/
+ 1315  ls
+ 1316  cd MedicalInsurance/
+ 1317  ls
+ 1318  cd nodejs/
+ 1319  lsd
+ 1320  ls
+ 1321  cd ..
+ 1322  ls
+ 1323  sudo ./sf.sh 
+ 1324  exit
+ 1325  ls
+ 1326  exit
+ 1327  ls
+ 1328  cd
+ 1329  cd Desktop/
+ 1330  ls
+ 1331  cd fabric-samples/
+ 1332  ls
+ 1333  cd MedicalInsurance/
+ 1334  ls
+ 1335  ./sf.sh 
+ 1336  sudo ./sf.sh 
+ 1337  ls
+ 1338  cd nodejs/
+ 1339  ls
+ 1340  node enrollAdmin.js 
+ 1341  ls
+ 1342  node registerUser.js 
+ 1343  ls
+ 1344  node invokeMI.js 
+ 1345  ls
+ 1346  node enrollAdmin.js 
+ 1347  node registerUser.js 
+ 1348  ls
+ 1349  cd ..
+ 1350  ls
+ 1351  sudo ./sf.sh 
+ 1352  ls
+ 1353  cd nodejs/
+ 1354  ls
+ 1355  node enrollAdmin.js 
+ 1356  node registerUser.js 
+ 1357  node invokeMI.js 
+ 1358  exit
+ 1359  ls
+ 1360  cd Desktop/
+ 1361  ls
+ 1362  cd ..
+ 1363  ls
+ 1364  cd hyperledgerPoc/
+ 1365  ls
+ 1366  cd medi-insurance/
+ 1367  ls
+ 1368  cd frontend/
+ 1369  ls
+ 1370  ng s
+ 1371  exit
+ 1372  lks
+ 1373  ls
+ 1374  cd Desktop/
+ 1375  ls
+ 1376  cd fabric-samples/
+ 1377  ls
+ 1378  cd MedicalInsurance/
+ 1379  ls
+ 1380  sudo ./sf.sh 
+ 1381  ls
+ 1382  cd nodejs/
+ 1383  ls
+ 1384  node enrollAdmin.js 
+ 1385  node registerUser.js 
+ 1386  ls
+ 1387  node invokeMI.js 
+ 1388  exit
+ 1389  cd
+ 1390  ls
+ 1391  cd hyperledgerPoc/
+ 1392  ls
+ 1393  cd m
+ 1394  cd medi-insurance/
+ 1395  ls
+ 1396  cd frontend/
+ 1397  ls
+ 1398  ng s
+ 1399  exit
+ 1400  docker exec -it chaincode bash
+ 1401  sudo docker exec -it chaincode bash
+ 1402  exit
+ 1403  docker exec -it cli bash
+ 1404  sudo docker exec -it cli bash
+ 1405  exit
+ 1406  cd
+ 1407  cd Desktop/
+ 1408  ls
+ 1409  cd fabric-samples/
+ 1410  ls
+ 1411  cd chaincode-docker-devmode/
+ 1412  ls
+ 1413  docker-compose -f docker-compose-simple.yaml up
+ 1414  sudo docker-compose -f docker-compose-simple.yaml up
+ 1415  docker rm -f 0d81006fa3217d7829a3797df66e906af08c0354718007c0440a7f68ff2ad2fb
+ 1416  sudo docker rm -f 0d81006fa3217d7829a3797df66e906af08c0354718007c0440a7f68ff2ad2fb
+ 1417  sudo docker-compose -f docker-compose-simple.yaml up
+ 1418  sudo docker-compose -f docker-compose-simple.yaml down
+ 1419  sudo docker-compose -f docker-compose-simple.yaml up
+ 1420  sudo docker-compose -f docker-compose-simple.yaml down
+ 1421  exit
+ 1422  ls
+ 1423  cd
+ 1424  cd hyperledgerPoc/
+ 1425  ls
+ 1426  cd m
+ 1427  cd medi-insurance/
+ 1428  ls
+ 1429  cd frontend/
+ 1430  ls
+ 1431  ng s
+ 1432  exit
+ 1433  ls
+ 1434  cd Desktop/
+ 1435  ls
+ 1436  cd fabric-samples/
+ 1437  lks
+ 1438  ls
+ 1439  cd MedicalInsurance/
+ 1440  ls
+ 1441  sudo ./sf.sh 
+ 1442  ls
+ 1443  cd nodejs/
+ 1444  ls
+ 1445  node enrollAdmin.js 
+ 1446  ls
+ 1447  node registerUser.js 
+ 1448  ls
+ 1449  node invokeMI.js 
+ 1450  cd
+ 1451  cd Desktop/
+ 1452  cd fabric-samples/
+ 1453  los
+ 1454  ls
+ 1455  cd basic-network/
+ 1456  ls
+ 1457  ./stop.sh 
+ 1458  sudo ./stop.sh 
+ 1459  cd ..
+ 1460  ls
+ 1461  cd MedicalInsurance/
+ 1462  ls
+ 1463  sudo ./sf.sh 
+ 1464  ls
+ 1465  cd nodejs/
+ 1466  ls
+ 1467  node enrollAdmin.js 
+ 1468  node registerUser.js 
+ 1469  ls
+ 1470  node invokeMI.js 
+ 1471  exit
+ 1472  cd
+ 1473  cd Documents/
+ 1474  ls
+ 1475  clear
+ 1476  cd
+ 1477  cd Documents/
+ 1478  ls
+ 1479  mkdir gitlab
+ 1480  ls
+ 1481  cd gitlab/
+ 1482  ls
+ 1483  mkdir agro
+ 1484  ls
+ 1485  cd agro/
+ 1486  ls
+ 1487  git clone https://gitlab.com/karthikramasamy/agro.git
+ 1488  ls
+ 1489  cd agro/
+ 1490  ls
+ 1491  cd ..
+ 1492  ls
+ 1493  mkdir agroAngular
+ 1494  ls
+ 1495  cd agroAngular/\
+ 1496  cd agroAngular
+ 1497  ls
+ 1498  git clone https://gitlab.com/SelvarajR/agroangular.git
+ 1499  ls
+ 1500  cd agroangular/
+ 1501  ls
+ 1502  cd ..
+ 1503  ls
+ 1504  mkdir dw
+ 1505  ls
+ 1506  cd dw/
+ 1507  ls
+ 1508  git clone https://gitlab.com/pravin-d/dw.git
+ 1509  ls
+ 1510  cd ..
+ 1511  ls
+ 1512  cd agro
+ 1513  ls
+ 1514  cd a
+ 1515  cd agro/
+ 1516  ls
+ 1517  git init
+ 1518  ls
+ 1519  ll
+ 1520  ls
+ 1521  cd ..
+ 1522  cd..
+ 1523  ls
+ 1524  cd..]
+ 1525  cd..
+ 1526  cd ..
+ 1527  ls
+ 1528  mkdir gitlab2
+ 1529  ls
+ 1530  cd gitlab2/
+ 1531  lds
+ 1532  ls
+ 1533  mkdir agro
+ 1534  ls
+ 1535  cd agro/
+ 1536  ls
+ 1537  git clone
+ 1538  ls
+ 1539  git clone https://gitlab.com/SelvarajVRS/project1.git
+ 1540  ls
+ 1541  cd project1/
+ 1542  ls
+ 1543  ll
+ 1544  git status
+ 1545  git add *
+ 1546  git status
+ 1547  ls
+ 1548  git commit -m "C\ontract"
+ 1549  ls
+ 1550  git status
+ 1551  git push
+ 1552  ls
+ 1553  cd ,,
+ 1554  cd ..
+ 1555  ls
+ 1556  mkdir agroAngular
+ 1557  ls
+ 1558  cd agroAngular/
+ 1559  ;s
+ 1560  ls
+ 1561  cd..
+ 1562  cd ..
+ 1563  ls
+ 1564  cd agroAngular/
+ 1565  ls
+ 1566  git clone https://gitlab.com/SelvarajVRS/project2.git
+ 1567  ls
+ 1568  git clone https://gitlab.com/SelvarajVRS/project2.git
+ 1569  ls
+ 1570  cd project2/
+ 1571  ls
+ 1572  git status
+ 1573  git add *
+ 1574  git status
+ 1575  git commit -m "angular"
+ 1576  git status
+ 1577  git push
+ 1578  ls
+ 1579  cd ..
+ 1580  ls
+ 1581  mkdir de
+ 1582  ls
+ 1583  cd de
+ 1584  ls
+ 1585  git clone https://gitlab.com/SelvarajVRS/project3.git
+ 1586  ls
+ 1587  cd project3/
+ 1588  ls
+ 1589  git status
+ 1590  git add *
+ 1591  ls
+ 1592  git status
+ 1593  ls
+ 1594  git add commit -m "ex"
+ 1595  git commit -m "ex"
+ 1596  ls
+ 1597  git status
+ 1598  git add *
+ 1599  git status
+ 1600  ls
+ 1601  git clone https://gitlab.com/SelvarajVRS/project3.git
+ 1602  cd ..
+ 1603  ls
+ 1604  rmdir project3/
+ 1605  ls
+ 1606  git clone https://gitlab.com/SelvarajVRS/project3.git
+ 1607  ls
+ 1608  cd project3/
+ 1609  ls
+ 1610  git status
+ 1611  git add *
+ 1612  git status
+ 1613  git add .angular-cli.json 
+ 1614  git status
+ 1615  git add .editorconfig 
+ 1616  git status
+ 1617  git add .gitignore 
+ 1618  git status
+ 1619  git commit -m "ne"
+ 1620  git status
+ 1621  git push
+ 1622  ls
+ 1623  cd ..
+ 1624  ls
+ 1625  cd ..
+ 1626  ls
+ 1627  gi clone https://gitlab.com/SelvarajVRS/tokens.git
+ 1628  git clone https://gitlab.com/SelvarajVRS/tokens.git
+ 1629  ls
+ 1630  cd tokens/
+ 1631  ls
+ 1632  ll
+ 1633  cd ..
+ 1634  ls
+ 1635  cd gitlab
+ 1636  ls
+ 1637  git clone https://Selvarajmnw@bitbucket.org/Selvarajmnw/tokens.git
+ 1638  cd ..
+ 1639  cd gitlab2/
+ 1640  ls
+ 1641  cd tokens/
+ 1642  ls
+ 1643  git status
+ 1644  git add *
+ 1645  git status
+ 1646  git commit -m "tokens"
+ 1647  git status
+ 1648  ls
+ 1649  git push
+ 1650  cd ..
+ 1651  ls
+ 1652  cd gitlab
+ 1653  ls
+ 1654  mkdir neonjs
+ 1655  ls
+ 1656  cd neonjs/
+ 1657  ls
+ 1658  git clone https://Selvarajmnw@bitbucket.org/Selvarajmnw/neonjs.git
+ 1659  s
+ 1660  ls
+ 1661  cd neonjs/
+ 1662  ls
+ 1663  cd ..
+ 1664  cd .,.]\
+ 1665  cd ..
+ 1666  ls
+ 1667  cd gitlab
+ 1668  cd ..
+ 1669  cd gitlab2
+ 1670  l
+ 1671  ls
+ 1672  mkdir neonjs
+ 1673  ls
+ 1674  rmdir neonjs/
+ 1675  ls
+ 1676  git clone https://gitlab.com/SelvarajVRS/neonjs.git
+ 1677  ls
+ 1678  cd neonjs/
+ 1679  ls
+ 1680  ll
+ 1681  git status
+ 1682  git add 
+ 1683  git add *
+ 1684  git status
+ 1685  git commit -m "neonjs"
+ 1686  git status
+ 1687  git push
+ 1688  ls
+ 1689  cd 
+ 1690  cd Documents/
+ 1691  ls
+ 1692  cd gitlab2
+ 1693  ls
+ 1694  cd neonjs/
+ 1695  ls
+ 1696  git statsu
+ 1697  git status
+ 1698  git add *
+ 1699  git status
+ 1700  git commit -m "njs"
+ 1701  git push
+ 1702  git status
+ 1703  git add *
+ 1704  git status
+ 1705  git push 
+ 1706  cs
+ 1707  cd 
+ 1708  cd hyperledgerPoc/
+ 1709  ls
+ 1710  mkdir newMI
+ 1711  ls
+ 1712  cd newMI/
+ 1713  ls
+ 1714  git clone git clone https://Selvarajmnw@bitbucket.org/SaiMamidi/medi-insurance.git
+ 1715  git clone https://Selvarajmnw@bitbucket.org/SaiMamidi/medi-insurance.git
+ 1716  ls
+ 1717  cd medi-insurance/
+ 1718  ls
+ 1719  ll
+ 1720  cd ..
+ 1721  ls
+ 1722  cd medi-insurance/
+ 1723  ls
+ 1724  git status
+ 1725  git add *
+ 1726  git statsu
+ 1727  gits t
+ 1728  git status
+ 1729  git commit -m "fixed"
+ 1730  git push
+ 1731  git status
+ 1732  git commit -a
+ 1733  git commit -m "fixed"
+ 1734  git statsu
+ 1735  git status
+ 1736  git add *
+ 1737  git commit -m "fixed"
+ 1738  git status
+ 1739  -a
+ 1740  git commit -a
+ 1741  git commit -a "fixed"
+ 1742  git commit -a 
+ 1743  git push
+ 1744  git status
+ 1745  cd
+ 1746  cd Documents/
+ 1747  ls
+ 1748  cd gitlab2/
+ 1749  ls
+ 1750  git clone https://gitlab.com/SelvarajVRS/medicalinsurance.git
+ 1751  ls
+ 1752  ls]
+ 1753  ls
+ 1754  cd medicalinsurance/
+ 1755  ls
+ 1756  s
+ 1757  ls
+ 1758  git clone https://gitlab.com/SelvarajVRS/medicalinsurance.git
+ 1759  ls
+ 1760  rmdir medicalinsurance/
+ 1761  rmdir -f medicalinsurance/
+ 1762  ls
+ 1763  cd ..
+ 1764  ls
+ 1765  git clone https://gitlab.com/SelvarajVRS/medicalinsurance.git
+ 1766  ls
+ 1767  cd medicalinsurance/
+ 1768  ls
+ 1769  cd ..
+ 1770  ls cd ..
+ 1771  ls
+ 1772  git clone https://gitlab.com/SelvarajVRS/medicalinsurance.git
+ 1773  ks
+ 1774  ls
+ 1775  cd medicalinsurance/
+ 1776  ls
+ 1777  ll
+ 1778  cd ..
+ 1779  cd medicalinsurance/
+ 1780  git clone https://gitlab.com/SelvarajVRS/medicalinsurance.git
+ 1781  ls
+ 1782  cd medicalinsurance/
+ 1783  ls
+ 1784  ll
+ 1785  git status
+ 1786  git add *
+ 1787  git status
+ 1788  git commit -m "fixed"
+ 1789  git status
+ 1790  git push
+ 1791  git status
+ 1792  ls
+ 1793  exit
+ 1794  cd
+ 1795  cd hyperledgerPoc/
+ 1796  ls
+ 1797  cd medi-insurance/
+ 1798  ls
+ 1799  git statui
+ 1800  git status
+ 1801  git add *
+ 1802  git status
+ 1803  git add *
+ 1804  git status
+ 1805  git commit -m "fixed"
+ 1806  git push
+ 1807  exit
+ 1808  ls
+ 1809  cd
+ 1810  cd Documents/
+ 1811  ls
+ 1812  cd UNICOIN/
+ 1813  ls
+ 1814  cd Frontend/
+ 1815  ls
+ 1816  ng s
+ 1817  http-serve
+ 1818  cd dist/
+ 1819  cd Token/
+ 1820  ls
+ 1821  http-server
+ 1822  exit
+ 1823  ls
+ 1824  cd Desktop/
+ 1825  ls
+ 1826  cd fabric-samples/
+ 1827  ls
+ 1828  cd MedicalInsurance/
+ 1829  ls
+ 1830  sudo ./sf.sh 
+ 1831  ls
+ 1832  cd nodejs/
+ 1833  ls
+ 1834  node enrollAdmin.js 
+ 1835  node registerUser.js 
+ 1836  ls
+ 1837  node invokeMI.js 
+ 1838  CLEAR
+ 1839  clear
+ 1840  CLEAR
+ 1841  clear
+ 1842  node invokeMI.js 
+ 1843  exit
+ 1844  ls
+ 1845  cd
+ 1846  ls
+ 1847  cd hyperledgerPoc/
+ 1848  ls
+ 1849  cd medi-insurance/
+ 1850  ls
+ 1851  cd frontend/
+ 1852  ls
+ 1853  ng s
+ 1854  ls
+ 1855  npm i
+ 1856  ls
+ 1857  ng s
+ 1858  exit
+ 1859  ls
+ 1860  git clone ttps://gitlab.com/chainfluxteam/AION.git
+ 1861  git clone https://gitlab.com/chainfluxteam/AION.git
+ 1862  ls
+ 1863  cd AION/
+ 1864  ls
+ 1865  cd AionWandxdesktopwallet/
+ 1866  ;s
+ 1867  ls
+ 1868  npm i
+ 1869  ls
+ 1870  ng s
+ 1871  npm i @ngtools
+ 1872  sudo npm i @ngtools
+ 1873  npm ls @ngtools/webpack
+ 1874  npm i @ngtools/webpack
+ 1875  ng s
+ 1876  npm i
+ 1877  ng s\
+ 1878  ng s
+ 1879  npm i
+ 1880  ng s
+ 1881  cd
+ 1882  git clone https://gitlab.com/chainfluxteam/AION.git
+ 1883  cd AION/
+ 1884  cd AionWandxdesktopwallet/
+ 1885  npm i --save
+ 1886  ng s
+ 1887  exit
+ 1888  ls
+ 1889  cd
+ 1890  cd hyperledgerPoc/
+ 1891  ls
+ 1892  cd medi-insurance/
+ 1893  ls
+ 1894  cd frontend/
+ 1895  ls
+ 1896  ng s
+ 1897  exit
+ 1898  ls
+ 1899  cd
+ 1900  cd Desktop/
+ 1901  ls
+ 1902  cd fabric-samples/
+ 1903  ls
+ 1904  cd MedicalInsurance/
+ 1905  ls
+ 1906  cd ..
+ 1907  cd chaincode
+ 1908  cd //
+ 1909  cd
+ 1910  cd Desktop/
+ 1911  cd fabric-samples/
+ 1912  cd chaincode-d
+ 1913  cd chaincode-docker-devmode/
+ 1914  ls
+ 1915  sudo docker-compose -f docker-compose-simple.yaml up
+ 1916  cd ..
+ 1917  cd basic-network/
+ 1918  ls
+ 1919  sudo ./stop.sh 
+ 1920  ls
+ 1921  cd ..
+ 1922  cd chaincode-d
+ 1923  cd chaincode-docker-devmode/
+ 1924  LD
+ 1925  SUDO docker-compose -f docker-compose-simple.yaml up
+ 1926  sudo docker-compose -f docker-compose-simple.yaml up
+ 1927  docker rm -f 9f9d8c1c139abf5389622340c940bd5920ce82425924286c7e5d250ef5cfe725
+ 1928  sudo docker rm -f 9f9d8c1c139abf5389622340c940bd5920ce82425924286c7e5d250ef5cfe725
+ 1929  sudo docker-compose -f docker-compose-simple.yaml up
+ 1930  sudo docker-compose -f docker-compose-simple.yaml down
+ 1931  sudo docker-compose -f docker-compose-simple.yaml up
+ 1932  docker rm -f 00656f0d0177e80747802cec5b1cdbc9439774aff81ca97e3c98e4fb54783594
+ 1933  sudo docker-compose -f docker-compose-simple.yaml up
+ 1934  sudo docker rm -f 00656f0d0177e80747802cec5b1cdbc9439774aff81ca97e3c98e4fb54783594
+ 1935  sudo docker-compose -f docker-compose-simple.yaml up
+ 1936  sudo docker-compose -f docker-compose-simple.yaml down
+ 1937  lls
+ 1938  ls
+ 1939  sl
+ 1940  ls
+ 1941  exit
+ 1942  docker exec -it chaincode bash
+ 1943  sudo docker exec -it chaincode bash
+ 1944  exit
+ 1945  docker exec -it cli bash
+ 1946  sudo docker exec -it cli bash
+ 1947  exit
+ 1948  ls
+ 1949  cd Desktop/
+ 1950  ls
+ 1951  cd fabric-samples/
+ 1952  ls
+ 1953  cd MedicalInsurance/
+ 1954  ls
+ 1955  ./sf.sh 
+ 1956  sudo ./sf.sh 
+ 1957  cd nodejs/
+ 1958  ls
+ 1959  node enrollAdmin.js 
+ 1960  node registerUser.js 
+ 1961  node invokeMI.js 
+ 1962  sudo ./sf.sh 
+ 1963  cd ..
+ 1964  cd MedicalInsurance/
+ 1965  sudo ./sf.sh 
+ 1966  cd nodejs/
+ 1967  ls
+ 1968  node enrollAdmin.js 
+ 1969  node registerUser.js 
+ 1970  ls
+ 1971  cd ..
+ 1972  cd nodejs/
+ 1973  node invokeMI.js 
+ 1974  clear
+ 1975  node invokeMI.js 
+ 1976  clear
+ 1977  node invokeMI.js 
+ 1978  cd ..
+ 1979  cd basic-network/
+ 1980  sudo ./stop.sh 
+ 1981  ls
+ 1982  cd ..
+ 1983  ls
+ 1984  cd MedicalInsurance/
+ 1985  ls
+ 1986  ./sf.sh 
+ 1987  sudo ./sf.sh 
+ 1988  exit
+ 1989  ls
+ 1990  cd 
+ 1991  ls
+ 1992  cd hyperledgerPoc/
+ 1993  ls
+ 1994  cd medi-insurance/
+ 1995  ls
+ 1996  cd frontend/
+ 1997  ls
+ 1998  ng s
+ 1999  http-server
+ 2000  history > history_for_print.txt

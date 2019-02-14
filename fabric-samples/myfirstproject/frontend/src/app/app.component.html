@@ -1,0 +1,472 @@
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="../jquery.min.js"></script>
+
+<!------ Include the above in your HEAD tag ---------->
+<!-- <h3 style="text-align: center">Medical Insurance</h3> -->
+<div class="container-fluid register">
+                <div class="row">
+                    <div class="col-md-4 register-left">
+                        <img src="../assets/medical-1.png" alt=""/>
+                        <h4><strong>Medical Insurance</strong></h4>
+                        <p>Wise financial thinking for a healthy life !</p> 
+                        <h1>{{ state }}</h1>
+
+                        <!-- <input type="submit" name="" value={{view}}/><br/> -->
+                    </div>
+                    <div class="col-md-8 register-right">
+                          
+                        <!-- <a class="nav-link active"  data-toggle="tab" href="#profile"(click)="admin()" aria-selected="true">Admin</a> -->
+                        <ul class="nav nav-tabs nav-justified"  id="myTab" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" (click)="operation(1)"  id="newpolicy" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">New Policy</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" (click)="operation(2)" id="payment" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="true">Payment</a>
+                                </li>
+
+                                <li class="nav-item">
+                                        <select class="nav-link active" id="claim" aria-selected="true" #claim_options (click)="operation(claim_options.value)" >
+                                            <option>Claims</option>
+                                            <option value=5>Request Claim</option>
+                                            <option value=6>Verify Claim</option>
+                                            <option value=7>Pay Claim</option>
+                                        </select>
+                                    </li> 
+
+                                <li class="nav-item">
+                                    <select class="nav-link active" id="details" #detail_option (click)="operation(detail_option.value)" aria-selected="true">
+                                        <option>Details</option>
+                                        <option value=8>Agent</option>
+                                        <option value=9>User</option>
+                                        <option value=10>Policies</option>
+                                        <option value=12>Claim</option>
+                                    </select>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link active" (click)="operation(11)" id="payment" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="true">Receipt</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <select class="nav-link active" id="register" aria-selected="true" #register_options (click)="operation(register_options.value)">
+                                        <option>Admin</option>
+                                        <option value=3>Agent Register</option>
+                                        <option value=4>Customer Register</option>
+                                    </select>
+                                </li>
+
+
+                            </ul>
+                        <div class="tab-content" [ngSwitch]="element" id="myTabContent"> 
+
+
+                            <!-- division -->
+
+                                               <!-- New Policy -->
+
+
+                            <div class="tab-pane fade show active" *ngSwitchCase="1" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                    <h3 class="register-heading">New Policy</h3>
+                                    <div class="row register-form">
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" [(ngModel)]="company_name" placeholder="Insurance Company" />
+                                            </div>
+                                           
+                                            <div class="form-group">
+                                                <select class="form-control" [(ngModel)]="policy_agent_id" placeholder="Agent ID">                                                    
+                                                <option value="" hidden >Agent ID</option>                                            
+                                                    <option *ngFor="let a of agentList">{{a}}</option> 
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" [(ngModel)]="office_branch" placeholder="Office Branch" />
+                                            </div>
+                                            <!-- <div class="form-group">
+                                                <input type="text" class="form-control" [(ngModel)]="policy_number" placeholder="Policy Number"/>
+                                            </div> -->
+                                            <div class="form-group">
+                                                <select class="form-control" id="total_Amount" [(ngModel)]="total_amount" #totalAmount (click)="set_total_amount(totalAmount.value)">
+                                                    <option class="hidden" value="" selected disabled>Total Amount</option>
+                                                    <option>200000</option>
+                                                    <option>400000</option>
+                                                    <option>500000</option>
+                                                    <option>800000</option>
+                                                    <option>1000000</option>
+                                                </select>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="col-md-6">
+                                                <div class="form-group">
+                                                        <select class="form-control" id="policytype_dropdown"  #policy_options (change)="set_policy_type(policy_options.value)" >
+                                                            <option class="hidden" value="" selected disabled>Policy Type</option>
+                                                            <option>Helth Insurance</option>
+                                                            <option>Personal Accident Insurance</option>
+                                                            <!-- <option>What is your Pet Name?</option> -->
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group">
+                                                            <!-- <input type="text" class="form-control" [(ngModel)]="period" placeholder="Period" value="" /> -->
+                                                            <select class="form-control" id="policy_dropdown" #policy_period (change)="set_policy_period(policy_period.value)">
+                                                                <option class="hidden" value="" selected disabled>Policy Period</option>
+                                                                <option>2</option>
+                                                                <option>5</option>
+                                                                <option>8</option>
+                                                                <option>10</option>
+                                                                <option>20</option>
+                                                            </select>
+                                                        </div>
+                                                        <!-- <div class="form-group">
+                                                                <div class="maxl">
+                                                                    <input type="text" class="form-control" [(ngModel)]="client_id" placeholder="Client ID" value="" />
+                                                                </div>
+                                                            </div> -->
+                                                        <div class="form-group">
+                                                            <select class="form-control" [(ngModel)]="client_id">
+                                                                <option value="" hidden>Customer ID</option>
+                                                                <option *ngFor="let a of custList">{{a}}</option> 
+                                                            </select>
+                                                        </div>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" placeholder="Date" value={{date}} readonly/>
+                                            </div>
+                                            <input type="submit" class="btnRegister" (click)="new_policy()" value="Register"/>
+                                        </div>
+                                    </div>
+                                </div>
+
+    
+                            <!-- New Policy Ends -->
+
+                            <!-- Payment -->
+
+                            <div class="tab-pane fade show active" *ngSwitchCase="2">
+                                    <h3 class="register-heading">Payment</h3>
+                                    <div class="row register-form">
+                                        <!-- <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" [(ngModel)]="agent_id" placeholder="Agent ID" value="" />
+                                            </div>
+                                        </div> -->
+                                        <div class="form-group">
+                                            <select class="form-control" [(ngModel)]="agent_id">
+                                                <option value="" hidden>Agent ID</option>
+                                                <option *ngFor="let a of agentList">{{a}}</option> 
+                                            </select>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                    <div class="form-group">
+                                                        <select class="form-control" [(ngModel)]="policy_id">
+                                                            <option value="" hidden>Policy ID</option>
+                                                            <option *ngFor="let a of policyList">{{a}}</option> 
+                                                        </select>
+                                                    </div>
+                                                <!-- <input type="email" class="form-control" [(ngModel)]="policy_id" placeholder="Policy ID"value="" /> -->
+                                            <input type="submit" class="btnRegister" (click)="make_payment()" value="Pay"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Payment Ends-->
+
+                            <!-- Register -->
+
+
+                            <div class="tab-pane fade show active" *ngSwitchCase="3">
+                                    <h3 class="register-heading">Agent Registration</h3>
+                                    <div class="row register-form">
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                              
+                                                <input type="text" class="form-control" [(ngModel)]="agent_name" placeholder="Name" value="" />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <input type="email" class="form-control" [(ngModel)]="agent_contact" placeholder="Contact"value="" />
+                                            <input type="submit" class="btnRegister" (click)="Agent_registeration()" value="Register"/>
+                                        </div>
+                                     </div>
+                                    </div>
+                            </div>
+
+                                <div class="tab-pane fade show active" *ngSwitchCase="4" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                        <h3 class="register-heading">Customer Registration</h3>
+                                        <div class="row register-form">
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" [(ngModel)]="customer_name"  placeholder="Name" value="" />
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" [(ngModel)]="customer_age" placeholder="Age" value="" />
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <input type="email" class="form-control" [(ngModel)]="relationship" placeholder="RelationShip"value="" />
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" [(ngModel)]="address" placeholder="Address" value="" />
+                                                <input type="submit" class="btnRegister" (click)="customer_registeration()" value="Register"/>
+                                            </div>
+                                         </div>
+                                        </div>
+                                    </div>
+
+                                
+                            <!-- Register Ends-->
+
+                            <!-- Claim -->
+
+
+                            <div class="tab-pane fade show active" *ngSwitchCase="5" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                    <h3 class="register-heading">Request Claim</h3>
+                                    <div class="row register-form">
+                                        <div class="col-sm-6">
+                                            <!-- <div class="form-group">
+                                                <input type="text" class="form-control" [(ngModel)]="claim_insured_id" placeholder="Insured Id" value="" />
+                                            </div> -->
+                                            <div class="form-group">
+                                                    <select class="form-control" [(ngModel)]="claim_insured_id">
+                                                        <option class="hidden" value="" selected disabled>Customer ID</option>
+                                                        <option *ngFor="let a of custList">{{a}}</option> 
+                                                    </select>
+                                                </div>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" [(ngModel)]="claim_for" placeholder="Claim For" value="" />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <!-- <div class="form-group">
+                                                <input type="text" class="form-control" [(ngModel)]="claim_policy_number" placeholder="policy Number" value="" />
+                                            </div> -->
+                                            <div class="form-group">
+                                                    <select class="form-control" [(ngModel)]="claim_policy_number">
+                                                        <option class="hidden" value="" selected disabled>Policy ID</option>
+                                                        <option *ngFor="let a of policyList">{{a}}</option> 
+                                                    </select>
+                                                </div>
+                                            <input type="submit" class="btnRegister" (click)="request_claim()" value="Request"/>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="tab-pane fade show active"  *ngSwitchCase="6" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                        <h3 class="register-heading">Verify Claim</h3>
+                                        <div class="row register-form">
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <select class="form-control" [(ngModel)]="verify_claim_id">
+                                                        <option class="hidden" value="" selected disabled>Claim ID</option>
+                                                        <option *ngFor="let a of claimList">{{a}}</option> 
+                                                    </select>
+                                                </div>
+                                                <!-- <div class="form-group">
+                                                    <input type="text" class="form-control" [(ngModel)]="verify_claim_id" placeholder="Claim Id" value="" />
+                                                </div> -->
+                                            </div>
+                                            <div class="col-md-6">
+                                                
+                                                <input type="submit" class="btnRegister" (click)="verify_claim()"  value="Verify"/>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="tab-pane fade show active" *ngSwitchCase="7" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                            <h3 class="register-heading">Pay Claim</h3>
+                                            <div class="row register-form">
+                                                <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                        <select class="form-control" [(ngModel)]="pay_claim_id">
+                                                            <option class="hidden" value="" selected disabled>Claim ID</option>
+                                                            <option *ngFor="let a of claimList">{{a}}</option> 
+                                                        </select>
+                                                    </div>
+                                                    <!-- <div class="form-group">
+                                                        <input type="text" class="form-control" [(ngModel)]="pay_claim_id" placeholder="Claim Id" value="" />
+                                                    </div> -->
+                                                </div>
+                                                <div class="col-md-6">
+                                                    
+                                                    <input type="submit" class="btnRegister" (click)="payforclaim()"  value="Verify"/>
+                                                </div>
+                                            </div>                                        </div>
+
+                            <!-- Claim Ends-->
+
+                            <div class="tab-pane fade show active" *ngSwitchCase="8">
+                                    <h3 class="register-heading">Agent Details</h3>
+                                        <div class="row register-form">
+                                            <div class="col-sm-6">
+                                                <div class="">
+                                                    <!-- <input type="text" class="form-control" [(ngModel)]="agent_detail_id" placeholder="Agent ID" value="" /> -->
+                                                    <div class="form-group">
+                                                        <select class="form-control" [(ngModel)]="agent_detail_id" placeholder="Agent ID">
+                                                            <option class="hidden" value="" selected disabled>Agent ID</option>
+                                                            <option *ngFor="let a of agentList">{{a}}</option> 
+                                                        </select>
+                                                    </div>
+                                                    <input type="submit" class="btnRegister" (click)="getdetails('Agent',agent_detail_id)"  value="get"/>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <p style="text-align: center">Total no.of Agents : {{ total_count }}</p>
+                                                <label>Name</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ got_agent_name }}<br>
+                                                <label>Contact</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ got_agent_contact }}<br>
+                                                <label>Total Payment</label>&nbsp;&nbsp;&nbsp;{{ got_agent_payment }}
+                                            </div>
+                                        </div>
+                                </div>
+
+
+                            <div class="tab-pane fade show active" *ngSwitchCase="9">
+                                    <h3 class="register-heading">User Details</h3>
+                                    <div class="row register-form">
+                                        <div class="col-sm-6">
+                                            <div class="">
+                                                <!-- <input type="text" class="form-control" [(ngModel)]="user_detail_id" placeholder="User ID" value="" /> -->
+                                                <div class="form-group">
+                                                    <select class="form-control" [(ngModel)]="user_detail_id">
+                                                        <option class="hidden" value="" selected disabled>User ID</option>
+                                                        <option *ngFor="let a of custList">{{a}}</option> 
+                                                    </select>
+                                                </div>
+                                                <input type="submit" class="btnRegister" (click)="getdetails('User',user_detail_id)"  value="get"/>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <p style="text-align: center">Total no.of Users : {{ total_count }}</p>
+                                            <label>Name</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ user_name }}<br>
+                                            <label>Age</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ user_age }}<br>
+                                            <label>Address</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ user_address }}<br>
+                                            <label>Insured_Relationship</label>&nbsp;&nbsp;&nbsp;{{ user_relationship }}
+                                            
+                                        </div>
+                                    </div>
+                            </div>
+
+                            
+                            <div class="tab-pane fade show active" *ngSwitchCase="10">
+                                    <h3 class="register-heading">Policy Details</h3>
+                                    <div class="row register-form">
+                                        <div class="col-sm-6">
+                                            <div class="">
+                                                <!-- <input type="text" class="form-control" [(ngModel)]="policy_detail_id" placeholder="Policy ID" value="" /> -->
+                                                <div class="form-group">
+                                                    <select class="form-control" [(ngModel)]="policy_detail_id">
+                                                        <option class="hidden" value="" selected disabled>Policy ID</option>
+                                                        <option *ngFor="let a of policyList">{{a}}</option> 
+                                                    </select>
+                                                </div>
+                                                <input type="submit" class="btnRegister" (click)="getdetails('Policy',policy_detail_id)"  value="get"/>
+                                            </div>
+                                        </div>
+                                        <!-- <div class="col-sm-6">
+                                            <p style="text-align:center">Total no.of Policies:{{ total_count }}</p>
+                                            <label class="mylabel">       Agent Code</label>{{ policy_agent_code }}<br>
+                                            <label class="mylabel">          Balance</label>{{ policy_balance }}<br>
+                                            <label class="mylabel">        Client_Id</label>{{ policy_client_id }}<br>
+                                            <label class="mylabel"> Cumulative_Bonus</label>{{ policy_cummulative_bonus }}<br>
+                                            <label class="mylabel">      Holder_Name</label>{{ policy_holder_name }}<br>
+                                            <label class="mylabel">   Holder_Address</label>{{ policy_holder_address }}<br>
+                                            <label class="mylabel">    Policy_Number</label>{{ policy_policy_number }}<br>
+                                            <label class="mylabel">    Policy_Period</label>{{ policy_policy_period }}<br>
+                                            <label class="mylabel">      Policy_Type</label>{{ policy_policy_type }}<br>                                            
+                                            <label class="mylabel">   Monthly_Invest</label>{{ Monthly_Invest}}<br>                                           
+                                            <label class="mylabel">    Total_Insured</label>{{ Total_Insured}}<br>
+                                            <label class="mylabel">First_Policy_Date</label>{{ policy_first_date}}<br>
+                                            <label class="mylabel"> Next_Policy_Date</label>{{ Next_Policy_Date}}<br>
+                                        </div> -->
+                                        <div class="col-sm-6">
+                                            <p style="text-align: center">Total no.of Policies : {{ total_count }}</p>
+                                            <label>Agent Code</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ policy_agent_code }}<br>
+                                            <label>Balance</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ policy_balance }}<br>
+                                            <label>Client_Id</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ policy_client_id }}<br>
+                                            <label>Cumulative_Bonus</label>&nbsp;&nbsp;{{ policy_cummulative_bonus }}<br>
+                                            <label>Holder_Name</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ policy_holder_name }}<br>
+                                            <label>Holder_Address</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ policy_holder_address }}<br>
+                                            <label>Policy_Number</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ policy_policy_number }}<br>
+                                            <label> Policy_Period</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ policy_policy_period }}<br>
+                                            <label> Policy_Type</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ policy_policy_type }}<br>                                            
+                                            <label>Monthly_Invest</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ Monthly_Invest}}<br>                                           
+                                            <label>Total_Insured</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ Total_Insured}}<br>
+                                            <label>First_Policy_Date</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ policy_first_date}}<br>
+                                            <label>Next_Policy_Date</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ Next_Policy_Date}}<br>
+                                        </div>
+                                    </div>
+                            </div>                     
+
+
+                            <div class="tab-pane fade show active" *ngSwitchCase="11">
+                                <h3 class="register-heading">Receipt Details</h3>
+                                <div class="row register-form">
+                                    <div class="col-sm-6">
+                                        <div class="">
+                                            <!-- <input type="text" class="form-control" [(ngModel)]="receipt_id" placeholder="Receipt ID" value="" /> -->
+                                                <select class="form-control" [(ngModel)]="receipt_id">
+                                                    <option class="hidden" value="" selected disabled>Receipt ID</option>
+                                                    <option *ngFor="let a of receiptList">{{a}}</option> 
+                                                </select>
+                                            <input type="submit" class="btnRegister" (click)="getdetails('Receipt',receipt_id)"  value="get"/>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <p style="text-align: center">Total no.of Receipt : {{ total_count }}</p>
+                                        <label>Balance</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ receipt_balance }}<br>
+                                        <label>Policy_No</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ receipt_policy_no }}<br>
+                                        <label>Sl_No</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ receipt_sl_no }}<br>
+                                        <label>Total_Amount_Paid</label>&nbsp;&nbsp;&nbsp;&nbsp;{{ receipt_total_amount_paid }}<br>
+                                        <label>Total_Premium</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ receipt_total_premium }}<br>
+                                        <label>Date</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ receipt_date }}<br>
+                                    </div>
+                                </div>
+                        </div>
+                            
+                        <div class="tab-pane fade show active" *ngSwitchCase="12">
+                            <h3 class="register-heading">Claim Details</h3>
+                            <div class="row register-form">
+                                <div class="col-sm-6">
+                                    <div class="">
+                                        <!-- <input type="text" class="form-control" [(ngModel)]="policy_detail_id" placeholder="Policy ID" value="" /> -->
+                                        <div class="form-group">
+                                            <select class="form-control" [(ngModel)]="claim_detail_id">
+                                                <option class="hidden" value="" selected disabled>Claim ID</option>
+                                                <option *ngFor="let a of claimList">{{a}}</option> 
+                                            </select>
+                                        </div>
+                                        <input type="submit" class="btnRegister" (click)="getdetails('Claim',claim_detail_id)"  value="get"/>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <p style="text-align: center">Total no.of Claims : {{ total_count }}</p>
+                                    <label>Insured Id</label>&nbsp;&nbsp;{{ claim_insured_id }}<br>
+                                    <label>Policy No</label>&nbsp;&nbsp;{{ claim_policy_number }}<br>
+                                    <label>verified</label>&nbsp;&nbsp;{{ claim_verified }}<br>
+                                    <!-- <label>Agent Code</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ policy_agent_code }}<br>
+                                    <label>Balance</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ policy_balance }}<br>
+                                    <label>Client_Id</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ policy_client_id }}<br>
+                                    <label>Cumulative_Bonus</label>&nbsp;&nbsp;{{ policy_cummulative_bonus }}<br>
+                                    <label>Holder_Name</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ policy_holder_name }}<br>
+                                    <label>Holder_Address</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ policy_holder_address }}<br>
+                                    <label>Policy_Number</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ policy_policy_number }}<br>
+                                    <label> Policy_Period</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ policy_policy_period }}<br>
+                                    <label> Policy_Type</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ policy_policy_type }}<br>
+                                    <label>First_Policy_Date</label>&nbsp;&nbsp;&nbsp;{{ policy_first_date}}<br> -->
+
+                                </div>
+                            </div>
+                    </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+   
